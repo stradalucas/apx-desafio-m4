@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Orbitron:wght@400;700&family=Poppins:wght@400;700&display=swap');
+
+/*  */
+
+html {
+    box-sizing: border-box;
+}
+*, :after, :before {
+    box-sizing: inherit;
+    text-decoration: none;
+}
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+.container-header-hero {
+    background-color: black;
+    color: #fff;
+}
+@media (min-width: 769px) {
+    .container-header-hero {
+        height: 100vh;
+        background-image: linear-gradient( 90deg, rgb(28, 151, 155) 0%, rgb(226, 101, 205) 100%);
+        background-size: 150%;
+    }
+}
+@media (min-height: 1200px) and (min-width: 960px) {
+    .container-header-hero {
+        height: 30vh;
+        min-height: 500px;
+    }
+}
+.section-header {
+    height: calc(100vh * 0.10);
+}
+.section-hero {
+    max-width: 1440px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90%;
+}
+@media (min-width: 769px) {
+    .section-hero {
+        justify-content: start;
+    }
+}
+.hero__title {
+    margin: 0;
+    padding: 80px 0;
+    text-align: center;
+    font-size: 48px;
+    font-weight: 700;
+    font-family: "Montserrat", sans-serif;
+}
+@media (min-width: 769px) {
+    .hero__title {
+        padding: 0 80px;
+    }
+}
+.section-services {
+    padding: 70px 40px;
+    color: #DBDBDB;
+}
+@media (min-width: 769px) {
+    .section-services {
+        background-color: #000;
+        padding: 100px 40px;
+    }
+}
+.section-services__container {
+    margin: 0 auto;
+    max-width: 400px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+}
+@media (min-width: 769px) {
+    .section-services__container {
+        gap: 60px 80px;
+        max-width: 600px;
+    }
+}
+@media (min-width: 1200px) {
+    .section-services__container {
+        grid-template-columns: 1fr 1fr 1fr;
+        max-width: 1400px;
+    }
+}
+@media (min-width: 1200px) and (min-height: 1000px) {
+    .section-services__container {
+        height: 50vh;
+    }
+}
+.services-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.services-card:hover {
+    transform: translateY(5px);
+}
+.services-card__image {
+    min-width: 200px;
+    width: 100%;
+    min-height: 170px;
+    max-height: 35vw;
+    object-position: center;
+    border-radius: 3px;
+}
+@media (min-width: 769px) {
+    .services-card__image {
+        width: 100%;
+        max-width: 375px;
+        height: 14vw;
+        max-height: 200px;
+    }
+}
+.services-card__title {
+    font-size: 24px;
+    margin: 5px 0 15px;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+}
+.services-card__description {
+    text-align: center;
+    font-size: 16px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    margin: 0;
+}
+.services-card__link {
+    margin-top: 12px;
+    font-size: 16px;
+    font-family: "Poppins", sans-serif;
+    text-decoration: none;
+    color: #fc6f50;
+    display: block;
+    text-align: end;
+}

@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Orbitron:wght@400;700&family=Poppins:wght@400;700&display=swap');
+
+/*  */
+
+html {
+    box-sizing: border-box;
+}
+*, :after, :before {
+    box-sizing: inherit;
+    text-decoration: none;
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Header - Welcome */
+
+.container-header-welcome {
+    height: 100vh;
+    min-height: 500px;
+    background-image: url("../../images//welcome-img.png");
+    background-size: cover;
+    background-position: 30% 55%;
+    display: grid;
+    grid-template-rows: 10% 90%;
+    align-items: center;
+}
+.section-welcome {
+    color: white;
+    text-align: center;
+}
+.section-welcome__title {
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+    font-size: 54px;
+    text-shadow: 0px 1px 4px rgb(0 0 0 / 70%);
+}
+.subtitle {
+    font-size: 39px;
+    text-align: center;
+}
+.section-header {
+    height: calc(100vh * 0.10);
+}
+
+/* About me */
+
+.section-about-me {
+    height: 100vh;
+    background-color: #141414;
+    color: white;
+}
+@media (min-width: 576px) {
+    .section-about-me {
+        height: 70vh;
+        min-height: 600px;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+        align-items: center;
+        padding: 40px;
+    }
+}
+@media (min-width: 769px) {
+    .section-about-me {
+        color: black;
+        background-color: #fff;
+    }
+}
+@media (min-width: 1200px) {
+    .section-about-me {
+        gap: 80px;
+    }
+}
+.section-about-me__content {
+    height: 100%;
+    /* max-width: 610px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    padding: 40px;
+}
+@media (min-width: 769px) {
+    .section-about-me__content {
+        height: 100%;
+        max-width: 610px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+        padding: 0px;
+    }
+}
+.section-about-me__title {
+    margin: 0;
+    font-size: 32px;
+    font-family: "Montserrat", sans-serif;
+}
+.section-about-me__paragraph {
+    text-align: center;
+    max-width: 600px;
+    margin: 0;
+    font-size: 16px;
+    font-family: "Poppins", sans-serif;
+}
+@media (min-width: 769px) {
+    .section-about-me__paragraph {
+        text-align: initial;
+        font-size: 24px;
+    }
+}
+.section-about-me__image {
+    display: none;
+}
+@media (min-width: 769px) {
+    .section-about-me__image {
+        display: block;
+        height: 480px;
+        width: 380px;
+        border-radius: 70%;
+        margin-left: -50px;
+    }
+}
+
+/* Services */
+
+.section-services {
+    background-color: #e8e8e8;
+    padding: 70px 30px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+@media (min-width: 576px) {
+    .section-services {
+        margin-bottom: 0px;
+        min-height: 600px;
+    }
+}
+@media (min-width: 960px) and (min-height:1200px) {
+    .section-services {
+        height: 70vh;
+    }
+}
+.section-services__title {
+    text-align: center;
+    margin: 0 0 60px 0;
+    font-size: 32px;
+    font-family: "Montserrat", sans-serif;
+}
+@media (min-width: 769px) {
+    .section-services__title {
+        font-size: 48px;
+    }
+}
+.section-services__container {
+    margin: 0 auto;
+    max-width: 400px;
+    display: grid;
+    gap: 40px;
+}
+@media (min-width: 960px) {
+    .section-services__container {
+        display: grid;
+        column-gap: 5vw;
+        grid-template-columns: 1fr 1fr 1fr;
+        max-width: 1440px;
+    }
+}
+@media (min-width: 1440px) {
+    .section-services__container {
+        column-gap: 100px;
+    }
+}
+.section-services__card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 350px;
+    padding: 20px 0;
+    border-radius: 5%;
+}
+.section-services__card:hover {
+    box-shadow: 12px 12px 32px -5px rgb(0 0 0 / 30%);
+    transform: translateY(5px);
+}
+.section-services__card-image {
+    min-width: 200px;
+    width: 100%;
+    min-height: 170px;
+    max-height: 180px;
+    object-position: center;
+    border-radius: 3px;
+}
+@media (min-width: 1200px) {
+    .section-services__card-image {
+        width: 100%;
+        max-width: 375px;
+        height: 14vw;
+        max-height: 200px;
+    }
+}
+.section-services__card-title {
+    font-size: 24px;
+    margin: 12px;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+}
+.section-services__card-description {
+    text-align: center;
+    font-size: 16px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    margin: 0;
+}
