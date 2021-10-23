@@ -1,6 +1,6 @@
-# APX Desafio módulo 4
+# APX Desafío módulo 4
 
-Desafio: https://stradalucas.github.io/apx-desafio-m4/
+Desafío: https://stradalucas.github.io/apx-desafio-m4/
 
 Te proponemos que pongas en práctica todo lo que aprendiste en estos capítulos. El sitio web deberá seguir la siguiente estructura: <br>
 
